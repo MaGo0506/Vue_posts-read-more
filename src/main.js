@@ -30,16 +30,6 @@ const router = new VueRouter({
 	mode: 'history',
 });
 
-const uploaderConfig = {
-	uploadFileUrl: 'https://console.firebase.google.com/u/0/project/vue-image-gallery/storage/vue-image-gallery.appspot.com/files',
-	deleteFileUrl: 'https://console.firebase.google.com/u/0/project/vue-image-gallery/storage/vue-image-gallery.appspot.com/files',
-	showMessage: (vue, message) => {
-		vue.$dlg.alert(message, null, { messageType: 'error' });
-	},
-};
-
-Vue.use(Uploader, uploaderConfig);
-
 new Vue({
 	store,
 	el: '#app',
