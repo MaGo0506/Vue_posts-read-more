@@ -41,12 +41,11 @@
         type="text"
       >
       <hr>
-      <button
-        type="submit"
-        @click.prevent="addPost"
-      >
-        Add Post
-      </button>
+      <Button
+        :type="submit"
+        :btn-text="text"
+        @click-event="addPost"
+      />
     </form>
     <div v-if="submitted">
       <h3>Thanks for adding your post</h3>
@@ -56,8 +55,13 @@
 
 <script>
 import { postsCollection } from '../../fireBase';
+import Button from '../common/button.vue';
 
 export default {
+	name: 'AddPost',
+	components: {
+		Button,
+	},
 	data() {
 		return {
 			post: {
@@ -67,6 +71,8 @@ export default {
 				author: '',
 			},
 			submitted: false,
+			text: 'Add Post',
+			submit: 'submit',
 		};
 	},
 	methods: {

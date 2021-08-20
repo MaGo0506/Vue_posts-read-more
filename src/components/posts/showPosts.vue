@@ -43,14 +43,11 @@
         Author: {{ post.author }}
       </blockquote>
     </div>
-    <button
+    <Button
       v-if="morePosts"
-      class="button"
-      @submit.prevent
-      @click="loadMore"
-    >
-      Show More Posts
-    </button>
+      :btn-text="text"
+      @click-event="loadMore"
+    />
     <p
       v-else
       class="noPosts"
@@ -61,13 +58,19 @@
 </template>
 
 <script>
+
 import { mapGetters } from 'vuex';
 import pin from '../../assets/pin.png';
+import Button from '../common/button.vue';
 
 export default {
+	components: {
+		Button,
+	},
 	data() {
 		return {
 			pin,
+			text: 'Show More Posts',
 		};
 	},
 	computed: {
