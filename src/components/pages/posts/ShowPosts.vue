@@ -61,7 +61,7 @@
 
 import { mapGetters } from 'vuex';
 import pin from '../../../assets/pin.png';
-import Button from '../../common/Button.vue';
+import Button from '../../Common/Button.vue';
 
 export default {
 	name: 'Posts',

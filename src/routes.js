@@ -1,6 +1,6 @@
-import home from './components/pages/home/Home.vue';
-import addPost from './components/pages/addPost/AddPost.vue';
-import showPosts from './components/pages/posts/ShowPosts.vue';
+import home from './components/Pages/Home/Home.vue';
+import addPost from './components/Pages/AddPost/AddPost.vue';
+import showPosts from './components/Pages/Posts/ShowPosts.vue';
 
 export default [
 	{ path: '/', component: home },
