@@ -60,10 +60,11 @@
 <script>
 
 import { mapGetters } from 'vuex';
-import pin from '../../assets/pin.png';
-import Button from '../common/button.vue';
+import pin from '../../../assets/pin.png';
+import Button from '../../common/Button.vue';
 
 export default {
+	name: 'Posts',
 	components: {
 		Button,
 	},
@@ -89,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/style.scss';
+@import '../../../scss/style.scss';
 
 #showPosts {
     display: flex;

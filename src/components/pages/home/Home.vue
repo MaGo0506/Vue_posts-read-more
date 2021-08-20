@@ -21,6 +21,7 @@
 <script>
 
 export default {
+	name: 'Home',
 	data() {
 		return {
 		};
@@ -31,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../scss/style.scss';
+@import '../../../scss/style.scss';
 
 h1 {
     height: 500px;

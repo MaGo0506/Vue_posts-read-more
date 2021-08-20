@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import loader from './components/common/loader.vue';
+import loader from './components/common/Loader.vue';
 
 export default {
 	name: 'App',
