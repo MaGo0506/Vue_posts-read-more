@@ -55,7 +55,7 @@
 
 <script>
 import { postsCollection } from '../../fireBase';
-import Button from '../common/button.vue';
+import Button from '../common/Button.vue';
 
 export default {
 	name: 'AddPost',
